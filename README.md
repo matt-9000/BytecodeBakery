@@ -14,8 +14,13 @@ To just run tests:
 
 `mvn test`
 
+To build for the impatient:
+
+`mvn -DskipTests clean package`
+
 ## Running the Bakery
 You've tested and built, time to open for business!
+
 `java -jar target/JavaBakery.jar`
 
 You will be asked to specify the cake recipient and theme, then we will get to baking it!
@@ -26,11 +31,11 @@ Welcome to the Java Bakery!
 ~~~~~~
 Enter cake recipient's name: Guy Cakeater
 Enter cake type (Graduation = 1, Birthday = 2): 1
-Baking.....
+Baking..........
 Ding! Baking done.
 
 Your cake is now ready, admire it!
-Its a bakery.cake.BirthdayCake that has icing with message="Happy Birthday Guy Cakeater!", and color=Blue!
+Its a bakery.cake.GraduationCake that has icing with message="Congratulations Guy Cakeater!", and color=Black!
 
 ~~~~~~
 Thanks for visiting, the bakery is now closed!

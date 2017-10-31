@@ -36,9 +36,9 @@ public class Bakery {
                     needCakeType = false;
                     
                     if(cakeTypeInt == 1) {
-                        cakeTheme = CakeTheme.Birthday;
-                    } else if (cakeTypeInt == 2) {
                         cakeTheme = CakeTheme.Graduation;
+                    } else if (cakeTypeInt == 2) {
+                        cakeTheme = CakeTheme.Birthday;
                     }
                     
                 } else {
