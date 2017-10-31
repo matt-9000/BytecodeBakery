@@ -43,9 +43,9 @@ Thanks for visiting, the bakery is now closed!
 
 
 ## Code structure
-For maximum flexibility, we favor composition over inheritance. A `BirthdayCake` implements `Cakeable`, which in turn extends `Bakeable`, `Consumable`, and `Iced`.
+For maximum flexibility, we favor composition over inheritance. A `BirthdayCake` implements `Cakeable`, which in turn extends `Admirable`, `Bakeable`, `Consumable`, and `Iced`.
 
-This will allow us to easily add new items in the future, such as a `Bagel` (implements `Bakeable` and `Consumable`, but not `Iced`) or a GlazedDonut (implements `Consumable` and `Iced` but not `Bakeable`. Because donuts are fried, right?)
+This will allow us to easily add new items in the future, such as a `Bagel` (implements `Bakeable` and `Consumable`, but not `Admirable` or `Iced`) or a GlazedDonut (implements `Admirable`, `Consumable` and `Iced` but not `Bakeable`. Because donuts are fried, right?)
 
 ## Documentation
 This is it! The code itself is *"self-documenting"*
