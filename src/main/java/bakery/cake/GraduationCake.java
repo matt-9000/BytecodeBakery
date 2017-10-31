@@ -25,6 +25,6 @@ public class GraduationCake implements Cakeable {
 
     @Override
     public int getBakeTime() {
-        return 10;
+        return 6;
     }
 }

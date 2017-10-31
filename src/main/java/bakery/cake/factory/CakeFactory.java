@@ -3,11 +3,18 @@ package bakery.cake.factory;
 import bakery.cake.Cakeable;
 import bakery.cake.CakeTheme;
 import bakery.cake.Icing;
+
+import java.util.function.BiFunction;
+
 import bakery.cake.BirthdayCake;
 import bakery.cake.GraduationCake;
 
 public class CakeFactory {
 
+
+    private static BiFunction<String, String, String> messageCustomizer =
+        (baseMessage, personalization) -> String.join(" ", baseMessage, personalization);
+        
     public static Cakeable bakeCake(CakeTheme theme, String recipient) throws UnknownCakeException {
         
         Cakeable cake = null;
@@ -23,8 +30,11 @@ public class CakeFactory {
                 Icing birthdayIcing = new Icing();
                 birthdayIcing.setColor("Blue");
                 
-                String birthdayMessage = cake.getMessage() + " " + recipient + "!";
+                String birthdayMessage = messageCustomizer.apply(cake.getMessage(), recipient);
+                   
                 birthdayIcing.setMessage(birthdayMessage);
+
+                birthdayIcing.exciteMessage();
                 
                 cake.setIcing(birthdayIcing);
                 
@@ -39,8 +49,11 @@ public class CakeFactory {
                 Icing graduationIcing = new Icing();
                 graduationIcing.setColor("Black");
 
-                String graduationMessage = cake.getMessage() + " " + recipient + "!";
+                String graduationMessage = messageCustomizer.apply(cake.getMessage(), recipient);
+                
                 graduationIcing.setMessage(graduationMessage);
+                
+                graduationIcing.exciteMessage();
                 
                 cake.setIcing(graduationIcing);
                 
