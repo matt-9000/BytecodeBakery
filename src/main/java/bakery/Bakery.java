@@ -1,8 +1,9 @@
-package bakery.cake;
+package bakery;
 
 import java.util.Scanner;
 
 import bakery.cake.CakeTheme;
+import bakery.cake.Cakeable;
 import bakery.cake.factory.CakeFactory;
 import bakery.cake.factory.UnknownCakeException;
 
