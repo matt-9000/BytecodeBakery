@@ -1,4 +1,4 @@
-# Java Bakery
+# Bytecode Bakery
 Hello! We are happy to bake you a custom cake for your big day! Currently we offer Birthday and Graduation cakes. Look for more cake themes in future releases.
 
 ## Environment
@@ -21,13 +21,13 @@ To build for the impatient:
 ## Running the Bakery
 You've tested and built, time to open for business!
 
-`java -jar target/JavaBakery.jar`
+`java -jar target/BytecodeBakery.jar`
 
 You will be asked to specify the cake recipient and theme, then we will get to baking it!
 
 ```
-$ java -jar target/JavaBakery.jar 
-Welcome to the Java Bakery!
+$ java -jar target/BytecodeBakery.jar 
+Welcome to the Bytecode Bakery!
 ~~~~~~
 Enter cake recipient's name: Guy Cakeater
 Enter cake type (Graduation = 1, Birthday = 2): 1

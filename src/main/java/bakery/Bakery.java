@@ -11,7 +11,7 @@ public class Bakery {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to the Java Bakery!");
+        System.out.println("Welcome to the Bytecode Bakery!");
         System.out.println("~~~~~~");
         
         try(Scanner scanner = new Scanner(System.in)) {

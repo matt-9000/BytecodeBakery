@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>bakery.cake</groupId>
-  <artifactId>JavaBakery</artifactId>
+  <artifactId>BytecodeBakery</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>JavaBakery</name>
+  <name>BytecodeBakery</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -26,7 +26,7 @@
   </dependencies>
   
     <build>
-        <finalName>JavaBakery</finalName>
+        <finalName>BytecodeBakery</finalName>
 
         <plugins>
             <plugin>
