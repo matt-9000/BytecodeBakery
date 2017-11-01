@@ -5,7 +5,7 @@ Hello! We are happy to bake you a custom cake for your big day! Currently we off
 We use Java 8. One day, we will use Java 9.
 
 ## Building
-We use maven as our build tool
+We use maven as our build tool.  
 To run tests and package the jar:
 
 `mvn clean package`
